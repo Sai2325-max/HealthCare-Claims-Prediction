@@ -18,15 +18,20 @@ Initial data exploration revealed notable distributions and correlations among f
 Throughout the project, different machine learning models were trained using various data processing techniques to assess their performance. Below is a summary of each submission, highlighting the methods and evaluation metrics used:
 Submission_1: A Linear Regression model was trained with null values replaced by zeros. Initial data analysis revealed a significant number of nulls, which necessitated specific handling techniques.
 Submission_2: The dataset was modified to train Linear Regression, Lasso Regression, and Ridge Regression models. Null values in the outpatient costs were replaced with the mean difference between current and past values, while conditions columns remained unchanged.
-Submission_3: Utilized the same null replacement technique as Submission 2, adding hyperparameter tuning to enhance model performance, specifically focusing on Ridge Regression.
-Submission_4: Employed the same null handling for an XGBoost model, which yielded the best performance so far, achieving the lowest Mean Absolute Error (MAE) among previous submissions.
-Submission_5: Introduced a Random Forest Regressor using the same null replacement method. Although its performance was decent, it did not surpass the XGBoost model in terms of MAE.
-Submission_6: Examined Random Forest performance on data with nulls replaced by zeros and observed minimal deviation in model performance.
-Submission_7: A CatBoost Regressor was trained, demonstrating strong performance with better MAE values compared to prior models.
-Submission_8: Implemented an averaging filter combining CatBoost and LightGBM, which resulted in decent performance, though not as effective as the standalone CatBoost model.
-Submission_9: Averages from XGBoost and CatBoost outputs were combined. While training performance was good, the model struggled on the testing set.
-Submission_10: Evaluated the XGBoost model using standard data with nulls replaced by zeros, yielding performance similar to Submission 9.
-Submission_11: Utilized Optuna for hyperparameter tuning, achieving the best results by integrating multiple models, reaching an MAE closer to 500.
+Submission_3_4: Utilized the same null replacement technique as Submission 2, adding hyperparameter tuning to enhance model performance, specifically focusing on Ridge Regression and in submission_4 just changed the 
+                cross validation to understand the concept of cross validation.
+Submission_5: Employed the same null handling for an XGBoost model, which yielded the best performance so far, achieving the lowest Mean Absolute Error (MAE) among previous submissions.
+Submission_6: Introduced a Random Forest Regressor using the same null replacement method. Although its performance was decent, it did not surpass the XGBoost model in terms of MAE.
+Submission_7: Employed Kneighbors regression. The code performs a hyperparameter tuning for K-Nearest Neighbors regressor using RandomizedSearchCV.
+submission_8: Used XGboost to understand the concept of advanced machine learning models which will help further in using and understanding of new Machine learning modles.
+submission_9: A Gradientboost regressor was trained in this model. understanding this model better helped me to use it as a stacking model in future submission.
+submission_10: code builds and trains a deep neural network for regression using TensorFlow’s Keras API. The model has seven dense layers with ReLU activations, compiled with the Adam optimizer and mean squared error 
+               loss. 
+Submission_11: A CatBoost Regressor was trained, demonstrating strong performance with better MAE values compared to prior models.
+Submission_12: Implemented an averaging filter combining CatBoost and LightGBM, which resulted in decent performance, though not as effective as the standalone CatBoost model.
+Submission_13: Averages from XGBoost and CatBoost outputs were combined. While training performance was good, the model struggled on the testing set.
+Submission_14: Evaluated the XGBoost model using standard data with nulls replaced by zeros, yielding performance similar to Submission 9.
+Submission_15_16_17_18: Utilized Optuna for hyperparameter tuning, achieving the best results by integrating multiple models XXGboost ,CAtboost and lightbgm using as gradeintboost regressor as stacking  model such as  reaching an MAE closer to 500.
 
 **Evaluation Metrics**
 
